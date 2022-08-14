@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ user }}
+{% endblock %}
+
+{% block css %}
+  .card-shadow{
+    box-shadow: rgba(0, 0, 0) 5px -5px;
+  }
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage%}
+{{ currPage }}
+{% endblock %}
+
+{% load static %}
+{% block body %}
+  <main>
+    <!-- Opction for teacher -->
+    <section>
+      <div class="flex justify-center">
+
+        <!-- teacher block start -->
+        <div class="flex flex-wrap justify-center md:grid md:grid-cols-3 md:mr-10">
+          <a href="marpoint"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-20 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Upload Mar</p>
+          </a>
+          <a href="growchart"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Student Growth</p>
+          </a>
+          <a href="admitcard"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Student's Admit</p>
+          </a>
+          <a href="admitcard"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Admit Card</p>
+          </a>
+          <a href="reviewresult"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Review Result</p>
+          </a>
+          <a href="uploadquestion"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Upload Question</p>
+          </a>
+          <a href="moocspoint"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Upload Moocs</p>
+          </a>
+          <a href="moocspoint"
+            class="card-shadow m-8 h28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Moocs Point</p>
+          </a>
+          <a href="updateaccount"
+            class="card-shadow m-8 h-28 bg-blue-500 text-white w-28 p-4 rounded-2xl flex flex-col items-center justify-center md:mr-24 md:h-32 md:w-32">
+            <img src="{% static 'teacher/file-icon.png' %}" alt="">
+            <p class="text-white text-lg text-center mt-2 md:text-2xl">Update Account</p>
+          </a>
+        </div>
+        <!-- teacher block end -->
+
+        <div>
+          <img class="hidden md:flex h-[100%] m" src="{% static 'teacher/home-banner.png' %}" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  {% endblock %}

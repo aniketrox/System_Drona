@@ -1,0 +1,330 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ currPage }}
+
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage%}
+{{ currPage }}
+{% endblock %}
+
+{% block body %}
+<main class="dark:bg-gray-700">
+    <!-- <div class="flex ">
+        <div class="bg-gray-600 border-2 text-white h- w-32"></div>
+        <div class="bg-gray-600 border-2 text-white h-60 w-48"></div>
+    </div> -->
+
+    <!-- Question section -->
+        <div class=" mx-auto pb-4 lg:flex lg:mx-10">
+            <div class="flex items-center md:hidden">
+                <button data-collapse-toggle="mega-menu-icons" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mega-menu-icons" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mega-menu-icons" class="hidden justify-between items-center w-full p-4 md:flex md:w-auto">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#"
+                            class="flex items-center mb-4 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <span class="ml-3 text-xl">English <span id="subjectCode">(EC 209)</span></span>
+                        </a>
+                    </li>
+
+                    <!-- question no. -->
+                    <div class="flex flex-wrap">
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div
+                                    class="rounded-full h-8 w-8 text-center items-center text-lg bg-gray-400 text-white dark:text-black">
+                                    <span class="">1</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+
+                </ul>
+                <hr>
+            </div>
+            <div class="h-[700px] border-2 m-4 mb-[90px] md:h-[850px] lg:w-[300%] lg:h-[500px] lg:mb-10"></div>
+        </div>
+
+        <!-- Question  -->
+</main>
+{% endblock %}
+

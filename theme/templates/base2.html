@@ -1,0 +1,139 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{% block title %} {% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{% tailwind_css %}
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-serif">
+	<div class="w-full bg-gray-200 rounded-full h-1.5">
+		<div class="progressBar ease-linear duration-500 bg-blue-500 h-1.5 rounded-full" style="width: 10%"></div>
+	</div>
+
+	<div class="hidden">
+		<!-- header start -->
+		<header
+			class="bg-[url('{% static 'image/navBanner.jpg' %}')] bg-cover bg-no-repeat md:h-[600px] md:p-10 lg:h-[700px]">
+
+			<!-- navbar start -->
+			<nav>
+
+				<!-- logo and menu bar -->
+				<div class="flex justify-between">
+					<div class="logo text-white text-xl font-semibold p-4 md:text-3xl lg:text-5xl">EMD</div>
+					<div class="menuBar">
+						<!-- drawer init and show -->
+						<img class="h-5 m-4 md:hidden" src="{% static 'image/menu-bar.png' %}"
+							data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+							aria-controls="drawer-navigation" alt="">
+
+						<!-- drawer component -->
+						<div id="drawer-navigation"
+							class="md:hidden fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 " tabindex="-1"
+							aria-labelledby="drawer-navigation-label">
+							<h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500">
+								Menu</h5>
+							<button type="button" data-drawer-dismiss="drawer-navigation"
+								aria-controls="drawer-navigation"
+								class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center ">
+								<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+										clip-rule="evenodd"></path>
+								</svg>
+								<span class="sr-only">Close menu</span>
+							</button>
+							<div class="py-4 overflow-y-auto">
+								<ul class="space-y-2">
+									<li>
+										<a href="/"
+											class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
+											Home
+										</a>
+									</li>
+									<li>
+										<a href="about"
+											class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
+											About
+										</a>
+									</li>
+									<li>
+										<a href="contactus"
+											class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
+											Contact Us
+										</a>
+									</li>
+									<li
+										class="text-white bg-blue-600 hover:bg-blue-700 rounded-full font-medium px-3 py-0.5 text-center md:px-6 ">
+										<a href="singin">Sing In</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul class="hidden md:flex text-white space-x-4 text-lg p-4">
+							<li class="hover:bg-white text-blue-600 hover:rounded-full px-4 py-1"> <a href="/"> Home
+								</a></li>
+							<li class="hover:bg-white hover:text-blue-600 hover:rounded-full px-4 py-1"> <a
+									href="about"> About </a></li>
+							<li class="hover:bg-white hover:text-blue-600 hover:rounded-full px-4 py-1"> <a
+									href="contactus"> Contact Us </a></li>
+							<li
+								class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 rounded-full font-medium text-center md:px-6 px-4 py-1">
+								<a href="singin">Sing In</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar end -->
+
+			<!-- banner content -->
+			<section>
+				<div class="text-center text-white mt-10">
+					<h1 class="font-medium text-2xl uppercase md:text-5xl md:mt-24 lg:mt-36">A Website for student</h1>
+					<p class="text-xs my-3 md:text-xl md:my-5">This website will help student to grow preformance</p>
+					<button type="button"
+						class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-3xl md:px-6 md:mt-14 lg:px-8 lg:py-2">Learn
+						More
+					</button>
+				</div>
+			</section>
+		</header>
+		<!-- header end -->
+
+
+		{% block body %}
+		{% endblock %}
+
+
+		<!-- footer start -->
+		<footer>
+			<div class="bg-black h-12 text-white py-4 md:h-16 realative bottom-0 w-full ">
+				<p class="text-xs text-center md:text-xl">Exam Monatring Device, copywrignt@2022</p>
+			</div>
+		</footer>
+		<!-- footer end -->
+	</div>
+
+	<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+	<script>
+		setTimeout(() => {
+			document.body.firstElementChild.firstElementChild.style.width = '70%'
+		}, 1000);
+		setTimeout(() => {
+			document.body.firstElementChild.firstElementChild.style.width = '90%'
+		}, 1500);
+		setTimeout(() => {
+			document.body.firstElementChild.classList.add('hidden')
+			document.body.children[1].classList.remove('hidden');
+		}, 2000);
+	</script>
+</body>
+
+</html>

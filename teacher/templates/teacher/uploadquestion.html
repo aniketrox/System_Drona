@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ user }}
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage %}
+{{ currPage }}
+{% endblock %}
+
+{% load static %}
+
+{% block body %}
+<main>
+    <div class="mb-10 lg:flex justify-center">
+        <div class="hidden md:flex md:justify-center md:items-center"><img class="w-[30vw]"
+                src="{% static 'teacher/uploadQuestion-banner.png' %}" alt=""></div>
+        <div class="flex justify-center items-center m-4 md:mx-10 md:mt-4 md:px-4">
+            <label for="dropzone-file"
+                class="flex flex-col justify-center items-center w-full lg:w-[50vw] h-[50vh] bg-gray-50 rounded-lg border-2 border-gray-300 border-dashed cursor-pointer ">
+                <div class="flex flex-col justify-center items-center pt-5 pb-6">
+                    <svg aria-hidden="true" class="mb-3 w-10 h-10 text-gray-600" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                        </path>
+                    </svg>
+                    <p class="mb-2 text-sm text-gray-500 "><span class="font-semibold">Click to
+                            upload</span> or drag and drop</p>
+                    <p class="text-xs text-gray-500">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                </div>
+                <input id="dropzone-file" type="file" class="hidden">
+            </label>
+        </div>
+    </div>
+
+    <!-- dropdown button -->
+    <div class="m-4 space-x-4 lg:flex lg:justify-end lg:mx-32">
+        <select class="bg-blue-500 text-white text-lg rounded-lg px-2 py-1" name="subject" id="">
+            <option class="bg-white text-black text-sm" value="">__Select Subject__</option>
+            <option class="bg-white text-black text-sm" value="english">English (ES 209)</option>
+            <option class="bg-white text-black text-sm" value="Chemistry">Chemistry (CS 209)</option>
+            <option class="bg-white text-black text-sm" value="Physics">Physics (PS 209)</option>
+            <option class="bg-white text-black text-sm" value="math">Math (MS 209)</option>
+        </select>
+        <select class="bg-blue-500 text-white text-lg rounded-lg px-2 py-1" name="level" id="">
+            <option class="bg-white text-black text-sm" value="">__Level__</option>
+            <option class="bg-white text-black text-sm" value="easy">Easy</option>
+            <option class="bg-white text-black text-sm" value="medium">Medium</option>
+            <option class="bg-white text-black text-sm" value="hard">Hard</option>
+        </select>
+    </div>
+
+    <!-- Preview seaction start -->
+    <section>
+        <div class="preview mx-4 md:m-10 md:mt-20 lg:mt-4">
+            <h1 class="my-2 font-semibold text-xl md:text-2xl md:my-4">Preview:</h1>
+            <div class="question border-2 h-[31vh] p-3 border-gray-200 md:text-lg md:p-10 md:h-80 lg:h-60 lg:text-xl">
+                <div class="mb-3">1. Good random questions to ask people. What do you think the meaning of life
+                    is? If money were no object, what would you do?
+                </div>
+                <div class="options">
+                    <p class="opction1"> a. You</p>
+                    <p class="opction2"> b. Your</p>
+                    <p class="opction3"> c. Our</p>
+                    <p class="opction4"> d. None of these</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- button in preview secation start -->
+        <div class="oprationBtn m-4 my-10 flex justify-between md:m-10">
+            <div>
+                <button type="button"
+                    class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 md:text-xl">Cancel</button>
+                <button type="button"
+                    class="text-yellow-500 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 md:text-xl">Edit</button>
+            </div>
+            <div>
+                <button
+                    class="hover:bg-white hover:text-blue-600 hover:border-2 hover:rounded-full px-4 py-2 rounded-lg text-white bg-blue-600 font-medium text-center md:px-6 relativel">
+                    Submit Question
+                </button>
+            </div>
+        </div>
+        <!-- button in preview secation end -->
+
+    </section>
+    <!-- Preview seaction end-->
+</main>
+{% endblock %}

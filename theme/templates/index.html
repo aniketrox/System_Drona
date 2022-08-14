@@ -1,0 +1,113 @@
+{% extends 'base2.html' %}
+{% block title %}
+Home
+{% endblock %}
+
+{% load static %}
+
+{% block body %}
+  <main>
+
+    <!-- info section start-->
+    <section class="testInfo my-14 md:mt-28">
+      <div class="text-center">
+        <h1 class="text-3xl font-semibold md:text-5xl">UPCOMING TEST</h1>
+        <div class="bg-blue-500 h-1.5 w-[60%] m-auto rounded-full my-2 md:w-72 md:mt-6"></div>
+
+        <div class="md:flex lg:p-10">
+          <!-- Test info No1 -->
+          <div>
+            <div class="jee mx-10 mt-10 flex flex-col justify-center text-center lg:mx-24">
+              <img class="mb-10" src="{% static 'image/engineer.jpg' %}" alt="">
+              <h1 class="text-3xl font-semibold md:text-4xl md:my-6">Jee Main</h1>
+              <p class="md:text-xl">Engineering Entrance Examination, is an India All India Engineering Entrance
+                Examination, is an India All
+                India is an India All Indi, is an India</p>
+            </div>
+            <button type="button"
+              class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-2xl md:py-1.5 md:px-5">Learn
+              More
+            </button>
+          </div>
+
+          <!-- Test info No2 -->
+          <div>
+            <div class="jee mx-10 mt-10 flex flex-col justify-center text-center lg:mx-24">
+              <img class="mb-10" src="{% static 'image/doctor.jpg' %}" alt="">
+              <h1 class="text-3xl font-semibold md:text-4xl md:my-6">Neet UG</h1>
+              <p class="md:text-xl">All India Engineering Entrance is an India All Indi, India
+                Engineering Entrance
+                Examination, is an India All India Engineering Entrance Examination, is an India</p>
+            </div>
+            <button type="button"
+              class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-2xl md:py-1.5 md:px-5">Learn
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info section end-->
+
+    <!-- Story Section start -->
+    <section>
+      <div
+        class="story bg-[url('{% static 'image/inspring-banner.jpg' %}')] p-10 bg-cover bg-no-repeat text-white md:h-[450px] md:p-20 lg:h-[600px] lg:p-28 ">
+        <h1 class="text-2xl md:text-5xl">Inspring Story</h1>
+        <div class="bg-blue-500 h-1 w-[43%] rounded-full my-2 md:w-64"></div>
+        <p class="text-[10px] w-[75%] md:text-xl my-4 md:my-10 lg:w-[50%] lg:my-14">Here, you will learn about those
+          student who crack there exam
+          an
+          get a
+          extraordener marks in there exam All
+          India Engineering Entrance Examination, is an Indian standardised computer-based test for admission to
+          Engineering Entrance Examination, is an Indian standardised </p>
+        <button type="button"
+          class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-2xl md:py-1.5 md:px-5">Learn
+          More
+        </button>
+      </div>
+    </section>
+    <!-- Story Section end -->
+
+    <!-- more things section start -->
+    <section class="testInfo my-14 md:mt-28">
+      <div class="text-center">
+        <div class="md:flex lg:p-10">
+          <!-- Test info No1 -->
+          <div>
+            <div class="jee mx-10 mt-10 flex flex-col justify-center text-center lg:mx-24">
+              <img class="mb-10 " src="{% static 'image/sample-img.jpg' %}" alt="">
+              <h1 class="text-3xl font-semibold md:text-4xl md:my-6">Gate</h1>
+              <p class="md:text-xl">Engineering Entrance Examination, is an India All India Engineering Entrance
+                Examination, is an India
+                All
+                India is an India All Indi, is an India</p>
+            </div>
+            <button type="button"
+              class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-2xl md:py-1.5 md:px-5">Learn
+              More
+            </button>
+          </div>
+
+          <!-- Test info No2 -->
+          <div>
+            <div class="jee mx-10 mt-10 flex flex-col justify-center text-center lg:mx-20">
+              <img class="mb-10" src="{% static 'image/sample-img (2).jpg' %}" alt="">
+              <h1 class="text-3xl font-semibold md:text-4xl md:my-6">Upsc</h1>
+              <p class="md:text-xl">All India Engineering Entrance is an India All Indi, ll India
+                Engineering Entrance
+                Examination, is an India All India Engineering Entrance Examination, is an India</p>
+            </div>
+            <button type="button"
+              class="text-white bg-blue-600 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full font-medium px-3 py-0.5 text-center mr-2 my-4 md:text-2xl md:py-1.5 md:px-5">Learn
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- more things section end -->
+
+  </main>
+{% endblock %}

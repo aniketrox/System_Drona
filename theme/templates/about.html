@@ -1,0 +1,27 @@
+{% extends 'base3.html' %}
+
+{% block title %}
+{{ currPage }}
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage%}
+{{ currPage }}
+{% endblock %}
+
+{% load static %}
+
+{% block body %}
+<main>
+    <div class="flex h-[75vh]">
+        <div class="m-16"><img src="{% static 'image/about-banner.png' %}" alt="this is banner"></div>
+        <div class="text-center m-10 p-4">
+            <h1 class="text-5xl font-semibold text-blue-600 my-10 ">RIC OF RKMGEC</h1>
+            <P>Teams share certain characteristics, including a clearly defined purpose (mission) and goals. Teamwork is defined by a shared comkmitment both to the team's process (how the team works together) and including a clearly defined purpose (mission) and goals. Teamwork is defined by a shared comkmitment both to the team's process (how the team works together) and to its product (what work the team accomplishes). </P>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ user }}
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage %}
+{{ currPage }}
+{% endblock %}
+
+{% block body %}
+<main>
+    <div class="text-center uppercase text-blue-600 font-semibold text-xl lg:text-4xl">GET READY FOR THE EXAM</div>
+    <form action="onlineexam">
+
+        <!-- Subject Opction -->
+        <div class="md:m-10 lg:flex">
+            <div class="m-4 h-72 lg:mt-10">
+                <h3 class="my-4 mt-10 font-semibold text-gray-900 text-xl">Choose the subject:</h3>
+                <ul class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-black">
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-license" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500  focus:ring-2 ">
+                            <label for="list-radio-license"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">English (ES
+                                209)
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-id" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2 ">
+                            <label for="list-radio-id" class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">Math
+                                (MS
+                                201)
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-millitary" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2">
+                            <label for="list-radio-millitary"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">Chemistry (CS
+                                205)
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-passport" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500   focus:ring-2 ">
+                            <label for="list-radio-passport"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">Physice (PS
+                                206)
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- number of question -->
+            <div class="m-4 h-72 lg:m-10">
+                <h3 class="my-4 lg:mt-10 font-semibold text-gray-900 text-xl">Choose the number of question:</h3>
+                <ul class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-black">
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-license" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2 ">
+                            <label for="list-radio-license"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">20
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-id" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2 ">
+                            <label for="list-radio-id" class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">30
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-millitary" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2 ">
+                            <label for="list-radio-millitary"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">50
+                            </label>
+                        </div>
+                    </li>
+                    <li class="w-full rounded-t-lg border-b border-black ">
+                        <div class="flex items-center pl-3">
+                            <input id="list-radio-passport" type="radio" value="" name="list-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-black focus:ring-blue-500 focus:ring-2 ">
+                            <label for="list-radio-passport"
+                                class="py-3 ml-2 w-full text-lg font-medium text-gray-900 ">100</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- next button -->
+        <div class="flex justify-end m-4">
+            <button
+                class="text-white text-lg my-4 bg-blue-600 hover:bg-white hover:text-blue-600 rounded-full font-medium text-center md:px-6 hover:rounded-full px-4 py-1  md:text-xl lg:mx-10 hover:border-2">
+                Next</button>
+        </div>
+    </form>
+</main>
+{% endblock %}

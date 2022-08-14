@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ user }}
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage%}
+{{ currPage }}
+{% endblock %}
+
+{% block body %}
+{% load static %}
+
+    <main>
+        <section class="flex text-center m-4 mt-10 justify-center md:m-32 lg:m-0 lg:mb-10">
+            <div class="detlis lg:w-full lg:px-20">
+                <div><img class="m-auto md:h-32" src="{% static 'student/profile-picture.png' %}" alt=""></div>
+                <div>
+                    <h1 class="text-2xl font-semibold m-4 md:text-4xl lg:text-2xl">Unknown One</h1>
+                </div>
+                <div>
+                    <p class="text-xl my-4 font-semibold md:text-3xl lg:text-2xl">Ramkrishna Mahato Government Engineering College, Purulia</p>
+                </div>
+                <div class="text-lg mt-10 md:text-2xl md:mt-20 lg:text-xl lg:my-4">
+                    <div class="flex justify-between">
+                        Subject:- English(EC 302)
+                    </div>
+                    <div class="flex justify-between">
+                    Teacher Code:- 987654321    
+                    </div>
+                    <div class="flex justify-between">
+                    Dept:- IT    
+                    </div>
+                </div>
+                <div class="flex justify-end mt-20">
+                    <div class="bg-gray-400 h-12 w-36 md:h-20 md:w-64 lg:h-16"></div>
+                </div>
+                <div class="text-end text-lg md:text-2xl">Student's Signature</div>
+            </div>
+            <div class="banner-img hidden lg:block lg:h-96 lg:w-full"><img class="h-[120%]" src="{% static 'student/account-banner.png' %}" alt=""></div>
+        </section>
+    </main>
+{% endblock %}
