@@ -23,8 +23,10 @@ urlpatterns = [
     path('teacher/', include('teacher.urls')),
     path('contactus/', views.contactus),
     path('about', views.about),
+    # path('registration', views.registration),
     path('singin', views.singin),
-    path('singin/form', views.singinform),
+    path('singin/form', views.registration),
+    path('singin/form/takephoto', views.takephoto),
     path('', views.index, name='index'),
     path("__reload__/", include("django_browser_reload.urls")),
 ] 

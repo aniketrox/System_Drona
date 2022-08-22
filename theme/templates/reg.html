@@ -1,0 +1,140 @@
+{% extends 'base3.html' %}
+
+{% block title %}
+{{ currPage }}
+{% endblock %}
+
+{% block user %}
+{{ user }}
+{% endblock %}
+
+{% block currPage %}
+{{ currPage }}
+{% endblock %}
+
+{% block body %}
+<main>
+    <!-- sing in form start-->
+    <section class="form">
+        <!-- <div class="m-auto border-2 mx-10 p-8 h-[60vh] my-28 lg:h-[70vh] lg:my-4"> -->
+            <!-- <form class="space-y-6" action="#">
+                <h5 class="text-xl font-medium text-gray-900 lg:text-4xl">Sign in</h5>
+                <div>
+                    <label for="first_name"
+                        class="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
+                    <input type="text" id="first_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="John" required>
+                </div>
+                <div>
+                    <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 ">Last
+                        name</label>
+                    <input type="text" id="last_name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="Doe" required>
+                </div>
+                <div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 lg:text-lg">Your
+                            email</label>
+                        <input type="email" name="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:text-lg"
+                            placeholder="name@company.com" required="">
+                    </div>
+                    <div>
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Phone number</label>
+                        <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
+                        <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="•••••••••" required>
+                    </div> 
+                    <div class="mb-6">
+                        <label for="confirm_password" class="block mb-2 text-sm font-medium text-gray-900 ">Confirm password</label>
+                        <input type="password" id="confirm_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="•••••••••" required>
+                    </div> 
+                    <div class="flex items-start">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="remember" type="checkbox" value=""
+                                    class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300"
+                                    required="">
+                                <label for="remember" class="ml-2 text-sm font-medium text-gray-900 lg:text-lg">Remember
+                                    me</label>
+                            </div>
+                        </div>
+                        <a href="#" class="ml-auto text-sm text-blue-700 hover:underline lg:text-lg">Forget
+                            Password?</a>
+                    </div>
+                    <button type="submit"
+                        class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center lg:text-lg">Login
+                        to your account</button>
+                    <div class="text-sm font-medium text-gray-500 lg:text-lg">
+                        Not registered? <a href="contactus" class="text-blue-700 hover:underline">Contact Us</a>
+                    </div>
+            </form> -->
+            <form class="border-2 lg:m-4 lg:p-4" action="takephoto"> 
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    <div>
+                        <label for="first_name"
+                            class="block mb-2 text-sm font-medium text-gray-900 ">First name</label>
+                        <input type="text" id="first_name"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="John" required="">
+                    </div>
+                    <div>
+                        <label for="last_name"
+                            class="block mb-2 text-sm font-medium text-gray-900 ">Last name</label>
+                        <input type="text" id="last_name"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            placeholder="Doe" required="">
+                    </div>
+                    
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Phone
+                        number</label>
+                    <input type="tel" id="phone"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
+                    </div>
+                <div class="my-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Email
+                        address</label>
+                    <input type="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="john.doe@company.com" required="">
+                </div>
+                <div class="mb-6">
+                    <label for="password"
+                        class="block mb-2 text-sm font-medium text-gray-900 ">Password</label>
+                    <input type="password" id="password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="•••••••••" required="">
+                </div>
+                <div class="mb-6">
+                    <label for="confirm_password"
+                        class="block mb-2 text-sm font-medium text-gray-900 ">Confirm password</label>
+                    <input type="password" id="confirm_password"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="•••••••••" required="">
+                </div>
+                <div class="flex items-start mb-6">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300"
+                            required="">
+                    </div>
+                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900">I agree with
+                        the <a href="#" class="text-blue-600 hover:underline">terms and
+                            conditions</a>.</label>
+                </div>
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+            </form>
+
+        <!-- </div> -->
+    </section>
+    <!-- sing in form end-->
+</main>
+{% endblock %}
