@@ -1,5 +1,5 @@
 """
-ASGI config for EMD_2_0 project.
+ASGI config for System_Drona project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'EMD_2_0.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'System_Drona.settings')
 
 application = get_asgi_application()

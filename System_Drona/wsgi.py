@@ -1,5 +1,5 @@
 """
-WSGI config for EMD_2_0 project.
+WSGI config for System_Drona project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'EMD_2_0.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'System_Drona.settings')
 
 application = get_wsgi_application()
