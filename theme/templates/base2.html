@@ -70,10 +70,17 @@
 											Contact Us
 										</a>
 									</li>
+									{% if user.is_authenticated %}
+									<li
+										class="text-white bg-blue-600 hover:bg-blue-700 rounded-full font-medium px-3 py-0.5 text-center md:px-6 ">
+										<a href="singin">Account</a>
+									</li>
+									{% else %}
 									<li
 										class="text-white bg-blue-600 hover:bg-blue-700 rounded-full font-medium px-3 py-0.5 text-center md:px-6 ">
 										<a href="singin">Sing In</a>
 									</li>
+									{% endif %}
 								</ul>
 							</div>
 						</div>

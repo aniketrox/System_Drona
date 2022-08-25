@@ -14,19 +14,19 @@
 
 {% block body %}
 <main>
-       <!-- sing in form start-->
-       <section class="form">
-        <div
-            class="m-auto border-2 mx-10 p-8 h-[60vh] my-28 lg:h-[70vh] lg:my-4">
-            <form class="space-y-6" action="#">
+    <!-- sing in form start-->
+    <section >
+        <div class="m-auto border-2 mx-10 p-8 h-[60vh] my-28 lg:h-[70vh] lg:my-4">
+            <form class="space-y-6" action="/singin/singinform" method="post">
+                {% csrf_token %}
                 <h5 class="text-xl font-medium text-gray-900 lg:text-4xl">Sign in</h5>
                 <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 lg:text-lg">Your
-                        email</label>
-                    <input type="email" name="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:text-lg"
-                        placeholder="name@company.com" required="">
+                    <label for="username" class="block mb-2 text-sm font-medium text-gray-900 ">Username</label>
+                    <input name="username" type="text" id="username"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        placeholder="username" required>
                 </div>
+
                 <div>
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900 lg:text-lg">Your
                         password</label>
@@ -40,8 +40,8 @@
                             <input id="remember" type="checkbox" value=""
                                 class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300"
                                 required="">
-                                <label for="remember" class="ml-2 text-sm font-medium text-gray-900 lg:text-lg">Remember
-                                    me</label>
+                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 lg:text-lg">Remember
+                                me</label>
                         </div>
                     </div>
                     <a href="#" class="ml-auto text-sm text-blue-700 hover:underline lg:text-lg">Forget
@@ -50,6 +50,7 @@
                 <button type="submit"
                     class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center lg:text-lg">Login
                     to your account</button>
+                    <button type="submit"><a href="signout">SignOut</a></button>
                 <div class="text-sm font-medium text-gray-500 lg:text-lg">
                     Not registered? <a href="contactus" class="text-blue-700 hover:underline">Contact Us</a>
                 </div>

@@ -16,10 +16,11 @@
 
 {% block body %}
 <main>
-    <form action="singin/form" class="h-[80vh] md:grid md:grid-cols-2 md:grid-rows-2 md:girdce md:justify-end md:h-[75vh]">
+    <form action="registration" method="get" class="h-[80vh] md:grid md:grid-cols-2 md:grid-rows-2 md:girdce md:justify-end md:h-[75vh]">
         <div class="singbox flex m-10 mb-20">
             <div class="bg-gray-400 h-16 w-20 md:h-20 md:w-24"><img class="h-10 m-auto my-2 md:my-3 md:h-12" src="{% static 'image/student-icon.png' %}" alt=""></div>
             <button class="bg-blue-500 h-16 w-60 text-center p-2 text-white md:h-20 md:w-72">
+                <input type="text" name="type" value="student" class="hidden" id="">
                 <div class="text-lg md:text-3xl">Student Login</div>
                 <div class="text-xs md:text-sm">Click here to login</div>
             </button>
