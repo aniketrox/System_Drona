@@ -26,4 +26,7 @@ urlpatterns = [
     path('about', views.about), 
     path('singin/', include('authentication.urls')),
     path("__reload__/", include("django_browser_reload.urls")),
+    path('system',views.take_sample, name='system'),
+    path('enter_exam',views.face_reognition, name='enter_exam'),
+
 ] 
